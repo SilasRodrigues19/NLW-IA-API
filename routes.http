@@ -24,3 +24,16 @@ Content-Type: application/json
 {
   "prompt": "trap, comédia, favela, dinheiro"
 }
+
+###
+
+# @name generate-ai-completion
+
+POST http://localhost:3333/ai/complete
+Content-Type: application/json
+
+{
+  "videoId": "3799f75c-15e8-42ae-8cfd-24f760e2a87b",
+  "temperature": 0.5,
+  "template": "Gere um resumo sucinto da transcrição do vídeo informada a seguir: '''{transcription}'''"
+}
