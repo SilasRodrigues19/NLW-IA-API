@@ -49,10 +49,10 @@
 
 ## About The Project
 
-| Light Desktop                                  | Dark Desktop                                    |
-| ---------------------------------------------- | ----------------------------------------------- |
-| [![Preview][product-screenshot]][project-link] | [![Preview][product-screenshot2]][project-link] |
-| Light Mobile                                   | Dark Mobile                                     |
+| Light Desktop                                   | Dark Desktop                                    |
+| ----------------------------------------------- | ----------------------------------------------- |
+| [![Preview][product-screenshot]][project-link]  | [![Preview][product-screenshot2]][project-link] |
+| Light Mobile                                    | Dark Mobile                                     |
 | [![Preview][product-screenshot3]][project-link] | [![Preview][product-screenshot4]][project-link] |
 
 <hr>
@@ -63,36 +63,42 @@ Project built during NLW AI, consists of an application for transcribing videos.
 
 Technologies used in the project.
 
-
 ### Frameworks
+
 - [Fastify](https://fastify.dev/)
-Fast and low overhead web framework, for Node.js.
+  Fast and low overhead web framework, for Node.js.
 
 ### Technologies
+
 - [TypeScript](https://www.typescriptlang.org/)
-A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
+  A strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 
 - [Prisma](https://www.prisma.io/)
-Next-generation Node.js and TypeScript ORM.
+  Next-generation Node.js and TypeScript ORM.
 
 ### Tools
+
 - [Zod](https://zod.dev/)
-TypeScript-first schema validation with static type inference.
+  TypeScript-first schema validation with static type inference.
 
 <!-- GETTING STARTED -->
 
 ## Prerequisites
-1. Create an OpenAI account in this link: 
+
+1. Create an OpenAI account in this link:
+
 ```sh
 https://platform.openai.com/signup?launch
 ```
 
 2. Access the following link and generate your apiKey
+
 ```sh
 https://platform.openai.com/account/api-keys
 ```
 
 3. After cloning the repo, rename `.env.example` to `.env` and paste your apiKey value
+
 ```sh
   # .env file
   DATABASE_URL="file:./dev.db" # paste the address of your bank inside the quotation marks if it is not local
@@ -118,9 +124,11 @@ https://platform.openai.com/account/api-keys
      http://localhost:3333/
    ```
 5. To run database seed
-  ```sh
-    pnpm prisma db seed
-  ```
+
+```sh
+  pnpm prisma db seed
+```
+
 6. Initialize the prism, generate and run the migrations
    ```sh
      pnpm prisma init && pnpm prisma generate && pnpm prisma migrate dev
@@ -129,7 +137,7 @@ https://platform.openai.com/account/api-keys
    ```sh
      pnpm prisma studio
    ```
-<!-- CONTRIBUTING -->
+   <!-- CONTRIBUTING -->
 
 ## Contributing
 
